@@ -1,0 +1,115 @@
+:root {
+  --primary: #43b7ff;
+  --dark: rgb(7, 27, 44);
+}
+
+body {
+  background-color: var(--dark);
+  color: whitesmoke;
+  margin: 0px;
+  padding: 0px;
+}
+
+/* navbar */
+
+.navbar {
+  justify-content: space-around;
+  display: flex;
+}
+
+.options {
+  margin: 2rem;
+}
+
+.options > div {
+  padding: 1rem;
+  display: inline-block;
+  font-size: 1.5rem;
+  border: 3px solid var(--dark);
+  border-radius: 10px;
+}
+
+.options > div > a {
+  color: white;
+  text-decoration: none;
+}
+
+.options > div:hover {
+  border-bottom: 3px solid var(--primary);
+}
+
+/* intro */
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0px 5rem 0px 5rem;
+  padding: 10vh;
+}
+
+.intro {
+  margin: 10vh 0 20vh 0;
+}
+
+.intro > h1 {
+    color: var(--primary);
+    font-size: 5rem;
+}
+
+.reflection > img {
+    width: 100%;
+}
+
+/* next section */
+
+/* 
+.button input[type="button"] {
+    width: 12.5rem;
+    height: 3.2rem;
+    background: var(--dark);
+    border: var(--primary) 2px solid;
+    padding: 0px;
+    color: var(--primary);
+    -webkit-text-fill-color: var(--primary);
+    position: absolute;
+    top: 37.5rem;
+    left: 12.5rem;
+}
+
+.section h2 {
+    text-align: center;
+    margin-top: 4rem;
+    font-size: 2.5rem;
+    display: block;
+}
+
+.section h2 span {
+    color: var(--primary);
+}
+
+.section img {
+    width: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.section .dash {
+    color: var(--primary);
+    font-size: 1rem;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section h3 {
+    text-align: center;
+    justify-content: center;
+    font-weight: lighter;
+}
+
+.section h3 span {
+    color: var(--primary);
+    font-size: 1.3rem;
+} */
