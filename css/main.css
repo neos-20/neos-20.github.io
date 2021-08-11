@@ -1,6 +1,6 @@
 :root {
   --primary: #43b7ff;
-  --dark: rgb(7, 27, 44);
+  --dark: rgba(0, 0, 0, 0.890);
 }
 
 body {
@@ -25,17 +25,19 @@ body {
   padding: 1rem;
   display: inline-block;
   font-size: 1.5rem;
-  border: 3px solid var(--dark);
-  border-radius: 10px;
+ 
 }
 
 .options > div > a {
   color: white;
   text-decoration: none;
 }
-
+.options > div > a:hover {
+  color: var(--primary);
+}
 .options > div:hover {
   border-bottom: 3px solid var(--primary);
+  border-radius: 3px;
 }
 
 /* intro */
