@@ -1,11 +1,14 @@
 :root {
   --primary: #43b7ff;
   --dark: rgb(0, 0, 0,0.900);
+  --another : #9FFE03;
+  --textcolor :#c1c1c1;
 }
 
 body {
+  font-family: 'Saira Condensed';
   background-color: var(--dark);
-  color: whitesmoke;
+  color: var(--textcolor);
   margin: 0px;
   padding: 0px;
 }
@@ -16,7 +19,9 @@ body {
   justify-content: space-around;
   display: flex;
 }
-
+#logo{
+  opacity: 0;
+}
 .options {
   margin: 2rem;
 }
@@ -24,9 +29,7 @@ body {
 .options > div {
   padding: 1rem;
   display: inline-block;
-  font-size: 1.5rem;
-  border: 3px solid rgba(0, 0, 0, 0);
-  border-radius: 10px;
+  font-size: 1.5rem; 
 }
 
 .options > div > a {
@@ -35,16 +38,13 @@ body {
 }
 
 .options > div > a:hover{
-  color: var(--primary);
-}
-
-.options > div:hover {
-  border-bottom: 3px solid var(--primary);
+  color: var(--another );
 }
 
 /* intro */
 
 .container {
+  
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin: 0px 5rem 0px 5rem;
@@ -55,9 +55,26 @@ body {
   margin: 10vh 0 20vh 0;
 }
 
-.intro > h1 {
-    color: var(--primary);
-    font-size: 5rem;
+#NEOS {
+  /* position: absolute; */
+  left: 79.58px;
+  font-family: Saira Condensed;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 88px;
+  line-height: 5rem;
+}
+
+#NEOS_TAGLINE{
+  /* position: absolute;
+  left: 79.58px;
+  top: 481.02px; */
+  font-family: Saira Condensed;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.75rem;
+  line-height: 2.5rem;
+  
 }
 
 .reflection > img {
