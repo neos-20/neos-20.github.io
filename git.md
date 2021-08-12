@@ -11,8 +11,11 @@ ab jo bh changes karne h kar lo
 jo bh changes hue h ab usko github mai dalna h 
 to 
 ->git status
+***
 ->git add .
+***
 ->git commit -m "yaha jo bh changes kiye h vo likho"
+***
 ->git push
 
 github mai jana apni repo mai-> pull request mai->new pull request 
