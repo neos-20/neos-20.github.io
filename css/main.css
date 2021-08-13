@@ -1,6 +1,6 @@
 :root {
   --primary: #43b7ff;
-  --dark: rgb(0, 0, 0);
+  --dark: rgb(0, 0, 0,0.900);
 }
 
 body {
@@ -14,30 +14,20 @@ body {
 /* navbar */
 
 .navbar {
+  justify-content: space-around;
   display: flex;
-  justify-content:space-between;
-  margin: 1rem 3rem 1rem 9rem;
-  height: 4.3rem;
 }
 
-#logo{
-  background: rgb(0, 0, 0);
-  height: 5rem;
-}
-
-.options{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    width: 40rem;
-    align-items: center;
+.options {
+  margin: 2rem;
 }
 
 .options > div {
-  margin: 1rem;
-  font-size: 2rem;
-  border-left: 3px solid black;
-  border-right: 3px solid black;
+  padding: 1rem;
+  display: inline-block;
+  font-size: 1.5rem;
+  border: 3px solid rgba(0, 0, 0, 0);
+  border-radius: 10px;
 }
 
 .options > div > a {
@@ -47,8 +37,10 @@ body {
 
 .options > div > a:hover{
   color: var(--primary);
-  font-size: 2.1rem;
-  font-weight: bold;
+}
+
+.options > div:hover {
+  border-bottom: 3px solid var(--primary);
 }
 
 /* intro */
@@ -56,75 +48,21 @@ body {
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin: 3rem 5rem 0px 10rem;
+  margin: 0px 5rem 0px 5rem;
+  padding: 10vh;
 }
 
 .intro {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align:left;
-  height: 40rem;
+  margin: 10vh 0 20vh 0;
 }
 
-.head{
-  margin-bottom: 2rem;
-}
-
-.head > h1 {
+.intro > h1 {
     color: var(--primary);
     font-size: 5rem;
-    margin: 0px;
-    height: 5rem;
 }
 
-.image1{
-  position: absolute;
-    height: 11rem;
-    width: 11rem;
-    top: 39rem;
-    right: 4rem;
-    clip-path: circle(48%);
-    transform: rotate(-146deg);
-    overflow: hidden;
-}
-.image2{
-  position: absolute;
-  height: 31rem;
-  width: 43rem;
-  top: 9rem;
-  right: -6rem;
-  transform: rotate(90deg);
-  clip-path: circle(34%);
-  overflow: hidden;
-}
-.image3{
-  position: absolute;
-  height: 17rem;
-  width: 23rem;
-  top: 9rem;
-  right: 25rem;
-  clip-path: circle(27%);
-  transform: rotate(12deg);
-  overflow: hidden;
-}
-.image4{
-  position: absolute;
-    height: 18rem;
-    width: 26rem;
-    top: 26rem;
-    right: 21rem;
-    clip-path: ellipse(35% 50% at 38% 52%);
-    overflow: hidden;
-}
-.image5{
-  position: absolute;
-  height: 8rem;
-  width: 11rem;
-  top: 43rem;
-  right: 17rem;
-  clip-path: circle(40%);
-  overflow: hidden;
+.reflection > img {
+    width: 100%;
 }
 
 /* next section */
