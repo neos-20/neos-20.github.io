@@ -1,6 +1,6 @@
 :root {
   --primary: #43b7ff;
-  --dark: rgb(0, 0, 0,0.900);
+  --dark: rgb(0, 0, 0);
 }
 
 body {
@@ -26,7 +26,7 @@ body {
   padding: 1rem;
   display: inline-block;
   font-size: 1.5rem;
-  border: 3px solid rgba(0, 0, 0, 0);
+  border: 3px solid var(--dark);
   border-radius: 10px;
 }
 
@@ -35,14 +35,20 @@ body {
   text-decoration: none;
 }
 
-.options > div > a:hover{
-  color: var(--primary);
-}
-
-.options > div:hover {
+.options > div > a:hover {
   border-bottom: 3px solid var(--primary);
+  color: var(--primary);
+  border-radius: 0.5rem;
 }
-
+.options span{
+  color: var(--primary);
+  font-weight: bolder;
+  
+  /* font-size: 1.5rem;
+  position:absolute;
+  top:35px;
+  left:1300px; */
+}
 /* intro */
 
 .container {
@@ -80,21 +86,25 @@ body {
     top: 37.5rem;
     left: 12.5rem;
 }
+
 .section h2 {
     text-align: center;
     margin-top: 4rem;
     font-size: 2.5rem;
     display: block;
 }
+
 .section h2 span {
     color: var(--primary);
 }
+
 .section img {
     width: 2rem;
     margin-left: auto;
     margin-right: auto;
     display: block;
 }
+
 .section .dash {
     color: var(--primary);
     font-size: 1rem;
@@ -103,11 +113,13 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
+
 .section h3 {
     text-align: center;
     justify-content: center;
     font-weight: lighter;
 }
+
 .section h3 span {
     color: var(--primary);
     font-size: 1.3rem;
