@@ -65,6 +65,59 @@ body {
     width: 100%;
 }
 
+.part1{
+  display: grid;
+  margin: 0px 5rem 0px 5rem;
+  padding: 10vh;
+}
+
+.part1 .ourcom h1{
+  color: var(--primary);
+  font-size:70px;
+  border-bottom: 2px solid var(--primary);
+
+}
+
+.part1 .ourcom .webdt{
+  display: grid;
+  margin: 0px 5rem 0px 5rem;
+  padding-left: 5vh;
+
+}
+.part1 .ourcom .appdt{
+  display: grid;
+  margin: 0px 5rem 0px 5rem;
+  padding-right: 5vh;
+}
+.part1 .ourcom .designt{
+  display: grid;
+  margin: 0px 5rem 0px 5rem;
+  padding-left: 5vh;
+}
+
+.part1 .ourcom .webdt h2{
+  font-size:30px;
+  border-left: 5px solid var(--primary);
+  padding-left:20px;
+  margin-bottom: 30px;
+}
+
+.part1 .ourcom .appdt h2{
+ text-align: right;
+  font-size:30px;
+  border-right: 5px solid var(--primary);
+  padding-right:20px;
+}
+
+.part1 .ourcom .designt h2{
+
+   font-size:30px;
+   border-left: 5px solid var(--primary);
+   padding-left:20px;
+ }
+ 
+
+
 /* next section */
 
 /* 
@@ -164,3 +217,4 @@ body {
   clip-path: circle(40%);
   overflow: hidden;
 }
+

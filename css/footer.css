@@ -3,7 +3,7 @@ footer{
     bottom: 0;
     left: 0px;
     width: 100%;
-    background: hsl(206, 81%, 65%);
+    background: hsl(214, 90%, 69%);
   }
   .img img{
       display: block;
@@ -30,10 +30,20 @@ footer{
     font-size: 1.5rem;
     font-weight: 600;
     text-transform: uppercase;
+    text-decoration: none;
+  }
+  .box a{
+    font-size: 1.3rem;
+    font-weight: 600;
+  
+    text-decoration: none;
+    color: black;
+    
   }
   .box .content{
     margin: 20px 0 0 0;
     position: relative;
+    
   }
   .box .content:before{
     position: absolute;
@@ -73,35 +83,11 @@ footer{
   .left .content .social a span:hover{
     background: #1a1a1a;
   }
-  .center .content .fas{
-    font-size: 1.4375rem;
-    background: #1a1a1a;
-    height: 45px;
-    width: 45px;
-    line-height: 45px;
-    text-align: center;
-    border-radius: 50%;
-    transition: 0.3s;
-    cursor: pointer;
-  }
-  .center .content .linkedin .linktxt h4{
-    padding-left: 10px;
-  }
-  .center .content .fas:hover{
-    background: #1a1a1a;
-  }
-  .center .content .text{
-    font-size: 1.0625rem;
-    font-weight: 500;
-    padding-left: 10px;
-  }
-  .center .content .phone{
-    margin: 15px 0;
-  }
+
   .right form .text{
     font-size: 1.0625rem;
     margin-bottom: 2px;
-    color: #656565;
+    color: black;
   }
   .right form .msg{
     margin-top: 10px;
@@ -109,9 +95,10 @@ footer{
   .right form input, .right form textarea{
     width: 100%;
     font-size: 1.0625rem;
-    background: white;
+    background: hsl(214, 100%, 81%);
     padding-left: 10px;
-    border: 1px solid #222222;
+    border: none;
+    border-radius:10px;
   }
   .right form input:focus,
   .right form textarea:focus{
@@ -132,6 +119,7 @@ footer{
     font-size: 1.0625rem;
     font-weight: 500;
     cursor: pointer;
+    border-radius:10px;
     transition: .3s;
   }
   .right form .btn button:hover{
