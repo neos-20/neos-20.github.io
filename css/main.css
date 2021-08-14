@@ -112,3 +112,55 @@ body {
     color: var(--primary);
     font-size: 1.3rem;
 } */
+
+
+.image1{
+  position: absolute;
+    height: 9rem;
+    width: 11rem;
+    top: 39rem;
+    right: 4rem;
+    clip-path: circle(48%);
+    transform: rotate(-146deg);
+    overflow: hidden;
+    
+  
+}
+.image2{
+  position: absolute;
+  height: 31rem;
+  width: 43rem;
+  top: 9rem;
+  right: -6rem;
+  transform: rotate(90deg);
+  clip-path: circle(34%);
+  overflow: hidden;
+}
+.image3{
+  position: absolute;
+  height: 17rem;
+  width: 23rem;
+  top: 9rem;
+  right: 25rem;
+  clip-path: circle(27%);
+  transform: rotate(12deg);
+  overflow: hidden;
+}
+.image4{
+  position: absolute;
+    height: 18rem;
+    width: 26rem;
+    top: 26rem;
+    right: 21rem;
+    clip-path: ellipse(35% 50% at 38% 52%);
+    overflow: hidden;
+}
+.image5{
+  position: absolute;
+  height: 8rem;
+  width: 11rem;
+  top: 43rem;
+  right: 17rem;
+  clip-path: circle(40%);
+  overflow: hidden;
+}
