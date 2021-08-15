@@ -16,7 +16,16 @@ body {
 .navbar {
   justify-content: space-around;
   display: flex;
+  background-color: #3d3939;
 }
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+
 
 .options {
   margin: 2rem;
@@ -41,6 +50,7 @@ body {
 
 .options > div:hover {
   border-bottom: 3px solid var(--primary);
+  border-top: 3px solid var(--primary);
 }
 
 /* intro */
@@ -115,6 +125,32 @@ body {
    border-left: 5px solid var(--primary);
    padding-left:20px;
  }
+
+ .imgtxt1 img{
+   width: 30%;
+   float: right;
+   border-radius: 30px;
+   margin-left: 40px;
+   margin-bottom: 50px;
+   box-shadow: 10px 10px var(--primary);
+ }
+ .imgtxt2 img{
+   width:30%;
+   border-radius: 30px;
+   float: left;
+   margin-right: 40px;
+   margin-bottom: 50px;
+   box-shadow: 10px 10px var(--primary);
+ }
+ .imgtxt3 img{
+  width: 30%;
+  float: right;
+  border-radius: 30px;
+  margin-left: 40px;
+  margin-bottom: 50px;
+  box-shadow: 10px 10px var(--primary);
+
+ }
  
 
 
@@ -167,7 +203,7 @@ body {
 } */
 
 
-.image1{
+.container .image1{
   position: absolute;
     height: 9rem;
     width: 11rem;
@@ -179,7 +215,7 @@ body {
     
   
 }
-.image2{
+.container .image2 {
   position: absolute;
   height: 31rem;
   width: 43rem;
@@ -189,7 +225,7 @@ body {
   clip-path: circle(34%);
   overflow: hidden;
 }
-.image3{
+.container .image3{
   position: absolute;
   height: 17rem;
   width: 23rem;
@@ -199,7 +235,7 @@ body {
   transform: rotate(12deg);
   overflow: hidden;
 }
-.image4{
+.container .image4{
   position: absolute;
     height: 18rem;
     width: 26rem;
@@ -208,7 +244,7 @@ body {
     clip-path: ellipse(35% 50% at 38% 52%);
     overflow: hidden;
 }
-.image5{
+.container .image5{
   position: absolute;
   height: 8rem;
   width: 11rem;
