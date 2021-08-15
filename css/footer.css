@@ -64,25 +64,7 @@ footer{
   .left .content p{
     text-align: justify;
   }
-  .left .content .social{
-    margin: 20px 0 0 0;
-  }
-  .left .content .social a{
-    padding: 0 2px;
-  }
-  .left .content .social a span{
-    height: 40px;
-    width: 40px;
-    background: #1a1a1a;
-    line-height: 40px;
-    text-align: center;
-    font-size: 18px;
-    border-radius: 5px;
-    transition: 0.3s;
-  }
-  .left .content .social a span:hover{
-    background: #1a1a1a;
-  }
+  
 
   .right form .text{
     font-size: 1.0625rem;
