@@ -19,13 +19,23 @@ body {
 .navbar {
   justify-content: space-around;
   display: flex;
+  background-color: #3d3939;
+  transition: 0.4s;
 }
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+
 #logo {
   opacity: 0;
 }
 .options {
   text-align: right;
-  margin: 2rem 0rem;
+  margin: 0.3rem;
 }
 
 .options > div {
