@@ -17,6 +17,7 @@ body {
   justify-content: space-around;
   display: flex;
   background-color: #3d3939;
+  transition: 0.4s;
 }
 .sticky {
   position: fixed;
@@ -25,14 +26,12 @@ body {
   z-index: 1;
 }
 
-
-
 .options {
-  margin: 2rem;
+  margin: 10px;
 }
 
 .options > div {
-  padding: 1rem;
+  padding: 15px;
   display: inline-block;
   font-size: 1.5rem;
   border: 3px solid rgba(0, 0, 0, 0);
