@@ -1,3 +1,6 @@
+div.contain{
+    background-color: black;
+}
 .container{
     display: flex;
     flex-direction: row;
@@ -9,6 +12,31 @@
 .card{
     margin: 20px;
 }
+
+
+.card img{
+    width: 300px;
+    
+    border-radius: 100%;
+    padding: 20px 20px;
+   
+    
+}
+div.card{
+    background-color: rgba(48, 46, 46, 0.884);
+    color: white;
+    border-radius: 15px;
+    border-width: 1px;
+    border-color: #43b7ff;
+}
+a.btn.btn-primary{
+    background-color: black;
+    color: rgb(252, 249, 249);
+    border-width: 1px;
+    border-color: #43b7ff; 
+
+}
+/* to make responsive */
 @media screen and (max-width: 750px)
 {
     .container{
