@@ -12,7 +12,7 @@ footer{
     margin-left: auto;
     margin-right: auto;
     filter: contrast(300%);
-    width: 50%;
+    width: 60%;
 }
 .img .name h2{
     text-align: center;
@@ -24,7 +24,7 @@ footer{
   color: black;
 }
 .main-content .box{
-  flex-basis: 50%;
+  flex-basis: 90%;
   padding: 10px 20px;
 }
 .box h2{
