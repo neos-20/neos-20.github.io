@@ -115,7 +115,7 @@ body {
 }
 
 .part1 .ourcom .webdt h2 {
-  font-size: 1.875rem;
+  font-size: 2.5rem;
   border-left: 0.313rem solid var(--primary);
   padding-left: 1.25rem;
   margin-bottom: 1.875rem;
@@ -123,13 +123,13 @@ body {
 
 .part1 .ourcom .appdt h2 {
   text-align: right;
-  font-size: 1.875rem;
+  font-size: 2.5rem;
   border-right: 0.313rem solid var(--primary);
   padding-right: 1.25rem;
 }
 
 .part1 .ourcom .designt h2 {
-  font-size: 1.875rem;
+  font-size: 2.5rem;
   border-left: 0.313rem solid var(--primary);
   padding-left: 1.25rem;
 }
