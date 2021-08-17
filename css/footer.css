@@ -3,10 +3,14 @@ footer{
     bottom: 0;
     left: 0px;
     width: 100%;
-    background: rgb(0, 0, 0, 0.9) url(/assets/Group219.svg) top left no-repeat;
+    background: rgb(0, 0, 0, 0.9) url(/neos-20.github.io/assets/Group219.svg) top left no-repeat;
     background-size: cover;
  
   }
+  /* .bgimg{
+     background: rgb(0, 0, 0, 0.9) url(/assets/Group219.svg) top left no-repeat;
+    background-size: cover; 
+  } */
   .img img{
     display: block;
     margin-left: auto;
