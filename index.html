@@ -13,7 +13,6 @@
 
     <!-- stylesheets -->
     <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="./css/portfolio.css">
     <link rel="stylesheet" href="./css/footer.css">
 
     <!-- fonts -->
@@ -29,12 +28,13 @@
 
     <!-- navigation -->
 
-    <div class="navbar">
+    <div class="navbar" id="navbar">
 
         <img id="logo" src="./assets/logo.svg" />
 
-        <div class="options">
-            <div><a href="#" >Home</a></div>
+        <div class="options" id="options">
+            <div><a href="#">Home</a></div>
+
             <div><a href="#">About</a></div>
             <div><a href="#">Projects</a></div>
             <div><a href="#">Portfolio</a></div>
@@ -66,45 +66,54 @@
 
         <!-- image -->
         <div class="image1">
-            <img src="https://github.com/Nakxtra/neos-20.github.io/blob/main/assets/image_bg.jpeg?raw=true"/>
+            <img src="./assets/image_bg.jpeg?raw=true"/>
         </div>
         <div class="image2">
-            <img src="https://github.com/Nakxtra/neos-20.github.io/blob/main/assets/image_bg.jpeg?raw=true"/>
+            <img src="./assets/image_bg.jpeg?raw=true"/>
         </div>
         <div class="image3">
-            <img src="https://github.com/Nakxtra/neos-20.github.io/blob/main/assets/image_bg.jpeg?raw=true"/>
+            <img src="./assets/image_bg.jpeg?raw=true"/>
         </div>
         <div class="image4">
-            <img src="https://github.com/Nakxtra/neos-20.github.io/blob/main/assets/image_bg.jpeg?raw=true"/>
+            <img src="./assets/image_bg.jpeg?raw=true"/>
         </div>
         <div class="image5">
-            <img src="https://github.com/Nakxtra/neos-20.github.io/blob/main/assets/image_bg.jpeg?raw=true"/>
+            <img src="./assets/image_bg.jpeg?raw=true"/>
         </div>
     </div>
 
       <!-- section 1 -->
       <section class="part1">
+       
         <div class="ourcom" id="ourcom">
           <h1> Our Community </h1>
           <div class="webdt" id="webdt">
             <h2> Web Development Team</h2> 
-            <div class="con">
+            <div class="imgtxt1">
               <!-- <img src="https://assets.atlanticbt.com/content/uploads/2019/12/g_feature-web-development-3.svg"> -->
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium labore officia laboriosam aliquam dolor minus magni iste est tenetur maiores nihil, ipsa, hic consectetur explicabo? Eum qui expedita vitae dignissimos? Earum minus ad atque vel? Iure magni rerum omnis fuga aliquam accusantium, enim, repellendus delectus aperiam, nam cupiditate esse iste!</p>
+              <!-- <img src="https://www.getillustrations.com/packs/blues-dual-tone-free-illustrations/scenes/_1x/social%20media,%20startup,%20communication%20_%20laptop,%20computer,%20man,%20work,%20publish,%20followers_md.png"> -->
+              <img src="https://image.freepik.com/free-vector/web-developers-courses-computer-programming-web-design-script-coding-study-computer-science-student-learning-interface-structure-components_335657-2542.jpg">
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium labore officia laboriosam aliquam dolor minus magni iste est tenetur maiores nihil, ipsa, hic consectetur explicabo? Eum qui expedita vitae dignissimos? Earum minus ad atque vel? Iure magni rerum omnis fuga aliquam accusantium, enim, repellendus delectus aperiam, nam cupiditate esse iste!</p>
             </div>
             
             
           </div>
           <div class="appdt" id="appdt">
             <h2> App Development Team</h2> 
-            <div class="con">
+            <div class="imgtxt2">
+              <img src="https://image.freepik.com/free-vector/app-development-concept-illustration_114360-5164.jpg">
               <!-- <img src="https://www.inexture.com/wp-content/uploads/2020/03/Group-498.svg"> -->
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium labore officia laboriosam aliquam dolor minus magni iste est tenetur maiores nihil, ipsa, hic consectetur explicabo? Eum qui expedita vitae dignissimos? Earum minus ad atque vel? Iure magni rerum omnis fuga aliquam accusantium, enim, repellendus delectus aperiam, nam cupiditate esse iste!</p>
             </div>
           </div>
           <div class="designt" id="designt">
             <h2> Design Team</h2> 
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium labore officia laboriosam aliquam dolor minus magni iste est tenetur maiores nihil, ipsa, hic consectetur explicabo? Eum qui expedita vitae dignissimos? Earum minus ad atque vel? Iure magni rerum omnis fuga aliquam accusantium, enim, repellendus delectus aperiam, nam cupiditate esse iste!</p>
+            <div class="imgtxt3">
+              <img src="https://image.freepik.com/free-vector/prototyping-process-concept-illustration_114360-2084.jpg">
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium labore officia laboriosam aliquam dolor minus magni iste est tenetur maiores nihil, ipsa, hic consectetur explicabo? Eum qui expedita vitae dignissimos? Earum minus ad atque vel? Iure magni rerum omnis fuga aliquam accusantium, enim, repellendus delectus aperiam, nam cupiditate esse iste!</p>
+
+            </div>
+            
           </div>
           
         </div>
@@ -114,8 +123,9 @@
      
     
     <!-- footer -->
-    <footer>
+   <footer>
         <div class="main-content">
+         
             <div class="img box">
                 <img src="assets/logo.svg">
                 <div class="name">
@@ -123,71 +133,154 @@
                 </div>
                 
             </div>
-          <div class="left box">
-            <h2>About us</h2>
-            <div class="content">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque expedita qui eos molestias nobis animi laboriosam deleniti, non dolorum! Voluptates consectetur, minus eius voluptatum labore minima quia. Explicabo, ducimus aperiam.</p>
+            <div class="left box">
+              <h2> Social </h2>
+              <div class="content">
+                <!-- linkedin icon -->
+                <svg width="58" height="59" viewBox="0 0 58 59" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g filter="url(#filter0_d)">
+                  <path d="M4 25.8027C4 39.6099 15.1929 50.8027 29 50.8027C42.8071 50.8027 54 39.6099 54 25.8027C54 11.9956 42.8071 0.802734 29 0.802734C15.1929 0.802734 4 11.9956 4 25.8027Z" fill="#2867B2"/>
+                  <path d="M22.125 38.3027H16.8125V21.584H22.125V38.3027ZM19.4688 19.2402C17.75 19.2402 16.5 17.9902 16.5 16.2715C16.5 14.5527 17.9063 13.3027 19.4688 13.3027C21.1875 13.3027 22.4375 14.5527 22.4375 16.2715C22.4375 17.9902 21.1875 19.2402 19.4688 19.2402ZM41.5 38.3027H36.1875V29.2402C36.1875 26.584 35.0937 25.8027 33.5312 25.8027C31.9687 25.8027 30.4062 27.0527 30.4062 29.3965V38.3027H25.0938V21.584H30.0937V23.9277C30.5625 22.834 32.4375 21.1152 35.0937 21.1152C38.0625 21.1152 41.1875 22.834 41.1875 27.9902V38.3027H41.5Z" fill="white"/>
+                  </g>
+                  <defs>
+                  <filter id="filter0_d" x="0" y="0.802734" width="58" height="58" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                  <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                  <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                  <feOffset dy="4"/>
+                  <feGaussianBlur stdDeviation="2"/>
+                  <feComposite in2="hardAlpha" operator="out"/>
+                  <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                  <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+                  <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+                  </filter>
+                  </defs>
+                  </svg>
+                  <!-- youtube icon -->
+                  <svg width="58" height="59" viewBox="0 0 58 59" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g filter="url(#filter0_d)">
+                    <path d="M4 25.8027C4 39.6099 15.1929 50.8027 29 50.8027C42.8071 50.8027 54 39.6099 54 25.8027C54 11.9956 42.8071 0.802734 29 0.802734C15.1929 0.802734 4 11.9956 4 25.8027Z" fill="#FF0000"/>
+                    <path d="M40.875 19.709C40.5625 18.6152 39.7813 17.834 38.6875 17.5215C36.8125 17.0527 28.8437 17.0527 28.8437 17.0527C28.8437 17.0527 21.0313 17.0527 19 17.5215C17.9063 17.834 17.125 18.6152 16.8125 19.709C16.5 21.7402 16.5 25.8027 16.5 25.8027C16.5 25.8027 16.5 29.8652 16.9688 31.8965C17.2813 32.9902 18.0625 33.7715 19.1562 34.084C21.0312 34.5527 29 34.5527 29 34.5527C29 34.5527 36.8125 34.5527 38.8437 34.084C39.9375 33.7715 40.7188 32.9902 41.0313 31.8965C41.5 29.8652 41.5 25.8027 41.5 25.8027C41.5 25.8027 41.5 21.7402 40.875 19.709ZM26.5 29.5527V22.0527L33.0625 25.8027L26.5 29.5527Z" fill="white"/>
+                    </g>
+                    <defs>
+                    <filter id="filter0_d" x="0" y="0.802734" width="58" height="58" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                    <feOffset dy="4"/>
+                    <feGaussianBlur stdDeviation="2"/>
+                    <feComposite in2="hardAlpha" operator="out"/>
+                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+                    </filter>
+                    </defs>
+                    </svg>
+                    <!-- twitter icon -->
+                    <svg width="58" height="59" viewBox="0 0 58 59" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g filter="url(#filter0_d)">
+                      <path d="M4 25.8027C4 39.6099 15.1929 50.8027 29 50.8027C42.8071 50.8027 54 39.6099 54 25.8027C54 11.9956 42.8071 0.802734 29 0.802734C15.1929 0.802734 4 11.9956 4 25.8027Z" fill="#1DA1F2"/>
+                      <path d="M41.5 17.9902C40.5625 18.459 39.625 18.6152 38.5313 18.7715C39.625 18.1465 40.4062 17.209 40.7188 15.959C39.7812 16.584 38.6875 16.8965 37.4375 17.209C36.5 16.2715 35.0937 15.6465 33.6875 15.6465C30.4063 15.6465 27.9063 18.7715 28.6875 21.8965C24.4688 21.7402 20.7188 19.709 18.0625 16.584C16.6563 18.9277 17.4375 21.8965 19.625 23.459C18.8438 23.459 18.0625 23.1465 17.2812 22.834C17.2812 25.1777 19 27.3652 21.3438 27.9902C20.5625 28.1465 19.7813 28.3027 19 28.1465C19.625 30.1777 21.5 31.7402 23.8437 31.7402C21.9687 33.1465 19.1563 33.9277 16.5 33.6152C18.8438 35.0215 21.5 35.959 24.3125 35.959C33.8437 35.959 39.1562 27.9902 38.8437 20.6465C39.9375 20.0215 40.875 19.084 41.5 17.9902Z" fill="white"/>
+                      </g>
+                      <defs>
+                      <filter id="filter0_d" x="0" y="0.802734" width="58" height="58" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                      <feOffset dy="4"/>
+                      <feGaussianBlur stdDeviation="2"/>
+                      <feComposite in2="hardAlpha" operator="out"/>
+                      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+                      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+                      </filter>
+                      </defs>
+                      </svg>
+                      <!-- instagram icon -->
+                      <svg width="58" height="59" viewBox="0 0 58 59" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g filter="url(#filter0_d)">
+                        <path d="M4 25.8027C4 39.6099 15.1929 50.8027 29 50.8027C42.8071 50.8027 54 39.6099 54 25.8027C54 11.9956 42.8071 0.802734 29 0.802734C15.1929 0.802734 4 11.9956 4 25.8027Z" fill="#F00073"/>
+                        <path d="M29 15.1777C32.4375 15.1777 32.9062 15.1777 34.3125 15.1777C35.5625 15.1777 36.1875 15.4902 36.6562 15.6465C37.2812 15.959 37.75 16.1152 38.2187 16.584C38.6875 17.0527 39 17.5215 39.1562 18.1465C39.3125 18.6152 39.4687 19.2402 39.625 20.4902C39.625 21.8965 39.625 22.209 39.625 25.8027C39.625 29.3965 39.625 29.709 39.625 31.1152C39.625 32.3652 39.3125 32.9902 39.1562 33.459C38.8437 34.084 38.6875 34.5527 38.2187 35.0215C37.75 35.4902 37.2812 35.8027 36.6562 35.959C36.1875 36.1152 35.5625 36.2715 34.3125 36.4277C32.9062 36.4277 32.5937 36.4277 29 36.4277C25.4062 36.4277 25.0938 36.4277 23.6875 36.4277C22.4375 36.4277 21.8125 36.1152 21.3438 35.959C20.7188 35.6465 20.25 35.4902 19.7813 35.0215C19.3125 34.5527 19 34.084 18.8438 33.459C18.6875 32.9902 18.5312 32.3652 18.375 31.1152C18.375 29.709 18.375 29.3965 18.375 25.8027C18.375 22.209 18.375 21.8965 18.375 20.4902C18.375 19.2402 18.6875 18.6152 18.8438 18.1465C19.1563 17.5215 19.3125 17.0527 19.7813 16.584C20.25 16.1152 20.7188 15.8027 21.3438 15.6465C21.8125 15.4902 22.4375 15.334 23.6875 15.1777C25.0938 15.1777 25.5625 15.1777 29 15.1777ZM29 12.834C25.4062 12.834 25.0938 12.834 23.6875 12.834C22.2813 12.834 21.3438 13.1465 20.5625 13.459C19.7813 13.7715 19 14.2402 18.2188 15.0215C17.4375 15.8027 17.125 16.4277 16.6563 17.3652C16.3438 18.1465 16.1875 19.084 16.0312 20.4902C16.0312 21.8965 16.0312 22.3652 16.0312 25.8027C16.0312 29.3965 16.0312 29.709 16.0312 31.1152C16.0312 32.5215 16.3438 33.459 16.6563 34.2402C16.9688 35.0215 17.4375 35.8027 18.2188 36.584C19 37.3652 19.625 37.6777 20.5625 38.1465C21.3438 38.459 22.2813 38.6152 23.6875 38.7715C25.0938 38.7715 25.5625 38.7715 29 38.7715C32.4375 38.7715 32.9062 38.7715 34.3125 38.7715C35.7187 38.7715 36.6562 38.459 37.4375 38.1465C38.2187 37.834 39 37.3652 39.7812 36.584C40.5625 35.8027 40.875 35.1777 41.3437 34.2402C41.6563 33.459 41.8125 32.5215 41.9687 31.1152C41.9687 29.709 41.9687 29.2402 41.9687 25.8027C41.9687 22.3652 41.9687 21.8965 41.9687 20.4902C41.9687 19.084 41.6563 18.1465 41.3437 17.3652C41.0312 16.584 40.5625 15.8027 39.7812 15.0215C39 14.2402 38.375 13.9277 37.4375 13.459C36.6562 13.1465 35.7187 12.9902 34.3125 12.834C32.9062 12.834 32.5937 12.834 29 12.834Z" fill="white"/>
+                        <path d="M29 19.084C25.25 19.084 22.2812 22.0527 22.2812 25.8027C22.2812 29.5527 25.25 32.5215 29 32.5215C32.75 32.5215 35.7187 29.5527 35.7187 25.8027C35.7187 22.0527 32.75 19.084 29 19.084ZM29 30.1777C26.6562 30.1777 24.625 28.3027 24.625 25.8027C24.625 23.459 26.5 21.4277 29 21.4277C31.3437 21.4277 33.375 23.3027 33.375 25.8027C33.375 28.1465 31.3437 30.1777 29 30.1777Z" fill="white"/>
+                        <path d="M35.875 20.4902C36.7379 20.4902 37.4375 19.7907 37.4375 18.9277C37.4375 18.0648 36.7379 17.3652 35.875 17.3652C35.0121 17.3652 34.3125 18.0648 34.3125 18.9277C34.3125 19.7907 35.0121 20.4902 35.875 20.4902Z" fill="white"/>
+                        </g>
+                        <defs>
+                        <filter id="filter0_d" x="0" y="0.802734" width="58" height="58" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                        <feOffset dy="4"/>
+                        <feGaussianBlur stdDeviation="2"/>
+                        <feComposite in2="hardAlpha" operator="out"/>
+                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+                        </filter>
+                        </defs>
+                        </svg>
+                        <!-- github icon -->
+                        <svg width="58" height="59" viewBox="0 0 58 59" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <g filter="url(#filter0_d)">
+                          <path d="M4 25.8027C4 39.6099 15.1929 50.8027 29 50.8027C42.8071 50.8027 54 39.6099 54 25.8027C54 11.9956 42.8071 0.802734 29 0.802734C15.1929 0.802734 4 11.9956 4 25.8027Z" fill="#231E1B"/>
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M28.9618 13.6027C22.081 13.6027 16.5 19.1838 16.5 26.0645C16.5 31.5691 20.0933 36.2327 24.9862 37.9146C25.5979 37.9911 25.8272 37.6088 25.8272 37.303C25.8272 36.9972 25.8272 36.2327 25.8272 35.1624C22.3868 35.9269 21.6223 33.4804 21.6223 33.4804C21.0872 32.0278 20.2462 31.6455 20.2462 31.6455C19.0994 30.881 20.3226 30.881 20.3226 30.881C21.5459 30.9575 22.2339 32.1807 22.2339 32.1807C23.3807 34.092 25.1391 33.5569 25.8272 33.251C25.9037 32.4101 26.2859 31.8749 26.5917 31.5691C23.8394 31.2633 20.9343 30.1929 20.9343 25.3764C20.9343 24.0003 21.393 22.9299 22.2339 22.0125C22.1575 21.7831 21.6988 20.4835 22.3868 18.8015C22.3868 18.8015 23.4572 18.4957 25.8272 20.1012C26.8211 19.7954 27.8914 19.7189 28.9618 19.7189C30.0321 19.7189 31.1024 19.8718 32.0963 20.1012C34.4664 18.4957 35.5367 18.8015 35.5367 18.8015C36.2248 20.4835 35.7661 21.7831 35.6896 22.089C36.4541 22.9299 36.9893 24.0767 36.9893 25.4529C36.9893 30.2694 34.0841 31.2633 31.3318 31.5691C31.7905 31.9513 32.1728 32.7159 32.1728 33.8627C32.1728 35.5446 32.1728 36.8443 32.1728 37.303C32.1728 37.6088 32.4021 37.9911 33.0138 37.9146C37.9832 36.2327 41.5 31.5691 41.5 26.0645C41.4235 19.1838 35.8425 13.6027 28.9618 13.6027Z" fill="white"/>
+                          </g>
+                          <defs>
+                          <filter id="filter0_d" x="0" y="0.802734" width="58" height="58" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                          <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                          <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                          <feOffset dy="4"/>
+                          <feGaussianBlur stdDeviation="2"/>
+                          <feComposite in2="hardAlpha" operator="out"/>
+                          <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                          <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+                          <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+                          </filter>
+                          </defs>
+                          </svg>
 
-            </div>
-          </div>
-          <div class="left1 box">
-            <h2>Connect</h2>
-            <div class="content">
-              <div class="linkedin">
-                <img src="https://image.flaticon.com/icons/png/128/254/254394.png" width="35" height="35">
-               
-                </div>
-              <div class="github">
-                
-              <img src="https://image.flaticon.com/icons/png/128/1051/1051326.png" width="35" height="35">
-              
+                          <!-- discord icon -->
+                          <svg width="58" height="59" viewBox="0 0 58 59" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g filter="url(#filter0_d)">
+                            <path d="M54 25.8027C54 11.9956 42.8071 0.802734 29 0.802734C15.1929 0.802734 4 11.9956 4 25.8027C4 39.6099 15.1929 50.8027 29 50.8027C42.8071 50.8027 54 39.6099 54 25.8027Z" fill="#7289DA"/>
+                            <path d="M26.7375 25.3527C26.025 25.3527 25.4625 25.9777 25.4625 26.7402C25.4625 27.5027 26.0375 28.1277 26.7375 28.1277C27.45 28.1277 28.0125 27.5027 28.0125 26.7402C28.025 25.9777 27.45 25.3527 26.7375 25.3527ZM31.3 25.3527C30.5875 25.3527 30.025 25.9777 30.025 26.7402C30.025 27.5027 30.6 28.1277 31.3 28.1277C32.0125 28.1277 32.575 27.5027 32.575 26.7402C32.575 25.9777 32.0125 25.3527 31.3 25.3527Z" fill="white"/>
+                            <path d="M37.375 14.8652H20.625C19.2125 14.8652 18.0625 16.0152 18.0625 17.4402V34.3402C18.0625 35.7652 19.2125 36.9152 20.625 36.9152H34.8L34.1375 34.6027L35.7375 36.0902L37.25 37.4902L39.9375 39.8652V17.4402C39.9375 16.0152 38.7875 14.8652 37.375 14.8652ZM32.55 31.1902C32.55 31.1902 32.1 30.6527 31.725 30.1777C33.3625 29.7152 33.9875 28.6902 33.9875 28.6902C33.475 29.0277 32.9875 29.2652 32.55 29.4277C31.925 29.6902 31.325 29.8652 30.7375 29.9652C29.5375 30.1902 28.4375 30.1277 27.5 29.9527C26.7875 29.8152 26.175 29.6152 25.6625 29.4152C25.375 29.3027 25.0625 29.1652 24.75 28.9902C24.7125 28.9652 24.675 28.9527 24.6375 28.9277C24.6125 28.9152 24.6 28.9027 24.5875 28.8902C24.3625 28.7652 24.2375 28.6777 24.2375 28.6777C24.2375 28.6777 24.8375 29.6777 26.425 30.1527C26.05 30.6277 25.5875 31.1902 25.5875 31.1902C22.825 31.1027 21.775 29.2902 21.775 29.2902C21.775 25.2652 23.575 22.0027 23.575 22.0027C25.375 20.6527 27.0875 20.6902 27.0875 20.6902L27.2125 20.8402C24.9625 21.4902 23.925 22.4777 23.925 22.4777C23.925 22.4777 24.2 22.3277 24.6625 22.1152C26 21.5277 27.0625 21.3652 27.5 21.3277C27.575 21.3152 27.6375 21.3027 27.7125 21.3027C28.475 21.2027 29.3375 21.1777 30.2375 21.2777C31.425 21.4152 32.7 21.7652 34 22.4777C34 22.4777 33.0125 21.5402 30.8875 20.8902L31.0625 20.6902C31.0625 20.6902 32.775 20.6527 34.575 22.0027C34.575 22.0027 36.375 25.2652 36.375 29.2902C36.375 29.2902 35.3125 31.1027 32.55 31.1902Z" fill="white"/>
+                            </g>
+                            <defs>
+                            <filter id="filter0_d" x="0" y="0.802734" width="58" height="58" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                            <feOffset dy="4"/>
+                            <feGaussianBlur stdDeviation="2"/>
+                            <feComposite in2="hardAlpha" operator="out"/>
+                            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+                            </filter>
+                            </defs>
+                            </svg>
               </div>
-              <div class="youtube">
-                <img src="https://image.flaticon.com/icons/png/128/1384/1384028.png" width="35" height="35">
-                </div>
-                <div class="instagram">
-                  <img src="https://image.flaticon.com/icons/png/128/1384/1384031.png" width="35" height="35">
+            </div>
+
+
+            <div class="right box">
+              <h2>Reach Us</h2>
+              <div class="content">
+                <form action="#">
+                  <div class="email">
+                    <div class="text">Email *</div>
+                    <input type="email" required>
                   </div>
-                  <div class="twitter">
-                    <img src="https://image.flaticon.com/icons/png/128/733/733635.png" width="35" height="35">
-                    </div>
-              
-              
+                  <div class="msg">
+                    <div class="text">Message *</div>
+                    <textarea rows="2" cols="25" required></textarea>
+                  </div>
+                  <div class="btn">
+                    <button type="submit">Send</button>
+                  </div>
+                </form>
+              </div>
             </div>
           </div>
-          <div class="center box">
-            <a class="com" href="#ourcom">
-            <h2>our community</h2>
-            </a>
-            <div class="content">
-              <a href="#webdt" > Web Development Team</a><br>
-              <a href="#appdt"> App Development Team</a><br>
-              <a href="#designt"> Design Team</a>
-              
- 
-              
-              
-            </div>
-          </div>
-          <div class="right box">
-            <h2>Reach Us</h2>
-            <div class="content">
-              <form action="#">
-                <div class="email">
-                  <div class="text">Email *</div>
-                  <input type="email" required>
-                </div>
-                <div class="msg">
-                  <div class="text">Message *</div>
-                  <textarea rows="2" cols="25" required></textarea>
-                </div>
-                <div class="btn">
-                  <button type="submit">Send</button>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
+          
+          
+         
+         
         <div class="bottom">
           <center>
             <span class="credit">Created By <a href="https://neos-20.github.io/">Neos</a> | </span>
@@ -197,6 +290,10 @@
       </footer>
 
     <!-- end -->
+
+    <!-- JS FILES FROM HERE-------------------------------------------------------->
+    <script src="js/sticnav.js"></script>
+
 
 </body>
 
