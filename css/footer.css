@@ -5,40 +5,61 @@
     --textcolor: #c1c1c1;
   }
 
-footer{
-     position:absolute;
-     top:175rem;
+
+ .footer{
+   grid-area: footer;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   grid-template-rows: 1fr;
+   grid-template-areas: "footerLogo""links""social""contact";
+   grid-gap: 0rem 0rem;
+ }
+ /* .footerLogo{
+   grid-area: footerLogo;
+ } */
+ .footerLogo{
+   display:grid;
+   grid-template-rows: 1fr 0.2fr;
+   grid-template-areas: "img"
+   "name";
  }
 
  .footerLogo img{
-    display: block;
+    /* position: relative;
+    top:2rem; */
+    margin-top: 4rem;
     margin-left: 6rem;
     margin-right: auto;
     filter: contrast(300%);
     height:12rem;
+    grid-area: img;
+  
 
  }
 
  .footerLogo .name h2{
     font-family: "Saira Condensed", sans-serif;
-    position:absolute;
-    left:7rem;
+     /* position:relative; */
+   margin-left:6.5rem; 
     font-size:2rem;
     color:var(--textcolor);
+    grid-area: name;
 }
-
+/* .links{
+  grid-area: links;
+} */
  .links h2{
-    position:absolute;
-    left:28rem;
-    bottom:7rem;
+     position:relative;
+     display:inline-block;
     font-size: 2rem;
     border-bottom:var(--textcolor) 2px solid;
     border-radius: 2px;
+    margin-left:4rem;
 }
 .links ul{
-    position:absolute;
-    left:26rem;
-    top:4rem;
+     position:relative;
+     left:2rem;
+     
     list-style-type: none;
 }
 .links ul li{
@@ -53,43 +74,43 @@ footer{
     /* font-size: 1.5rem; */
     color:var(--primary)
 }
+/* .social{
+  grid-area: social;
+} */
 .social h2{
-    position:absolute;
-    left:49rem;
-    bottom:7rem;
+     position:relative;
+     display:inline-block;
     font-size: 2rem;
+    margin-left:4rem;
     border-bottom:var(--textcolor) 2px solid;
     border-radius: 2px;
 }
 .social .component {
-    position:absolute;
-    left:44rem;
-    top:4rem;
-    
+     position:relative;   
 
 }
 
 .social .component ul {
-    justify-content: space-around;
+    
     display: flex;   
     
 }
 .component ul div{
-    padding-left:1.4rem;
+    padding-left:1rem;
 }
 
+
 .contact h2{
-    position:absolute;
-    left:72rem;
-    bottom:7rem;
+     position:relative;
+    display:inline-block;
+    margin-left: 3rem;
+  
     font-size: 2rem;
     border-bottom:var(--textcolor) 2px solid;
     border-radius: 2px;
 }
 .contact ul{
-    position:absolute;
-    left:69rem;
-    top:4rem;
+   position:relative;
     list-style-type: none;
 
 }
