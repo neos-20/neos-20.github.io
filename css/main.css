@@ -1,4 +1,5 @@
 
+
 :root {
   --primary: #43b7ff;
   --dark: rgb(0, 0, 0);
@@ -27,6 +28,7 @@ body::-webkit-scrollbar{
   display: flex;
   background-color: var(--dark);
   transition: 0.4s;
+  /* grid-area: navbar; */
 }
 .sticky {
   position: fixed;
@@ -46,7 +48,7 @@ body::-webkit-scrollbar{
 
 .options > div {
   
-  padding : 1.5rem 1.2rem;
+  padding : 1.2rem 1.3rem;
   
   display: inline-block;
   font-size: 1.8rem;
@@ -67,57 +69,72 @@ body::-webkit-scrollbar{
 
 .container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 3fr;
+  grid-template-areas: "intro"
+  "bgImg";
   margin: 0rem 5rem 0rem 5rem;
-  padding: 10vh;
+  padding: 7vh;
 }
 
 .container .bgImg{
   z-index:-2;
-  position: absolute;
-  top:6.25rem;
-  left:0px;
+  position: relative;
+   
+  top:4em;
+  right:28em; 
+  width:100vw;
   
 }
 
 
   /* Quotes  */
+
+  .quoteSection{
+    display:grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "quoteLeft Quotes quoteRight";
+  }
   .quoteLeft{
-    position:absolute;
-    top:50rem;
-    width:25%;
-    margin:1.25rem;
-    float:left;
+     position:relative;
+    /* top:50rem; */
+    /* width:25%; */
+    margin: 1.25rem;
+    /* float:left;  */
+    /* grid-area: quoteLeft; */
   }
   .quoteRight{
-    width:25%;
-    position:absolute;
-    top:50rem;
-    left :68.5rem;
+     /* width:25%; */
+    position:relative;
+    /* top:50rem;
+    left :68.5rem; */
     margin:1.25rem;
     
+     
+      /* grid-area: quoteRight;  */
     
   }
 
  .Quotes {
-   position: absolute;
-   top:50rem;
-   left :26rem;
-   justify-content: center;
+    position: relative;
+   /* top:50rem;
+   left :26rem;  */
+   justify-content : center;
    text-align: center;
    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
     
     background: var(--dark);
     border: var(--primary) 2px solid;
-    padding: 1.3rem;
-    margin:1rem;
+    padding : 1.3rem;
+    margin : 1rem;
     border-radius: 1.25rem;
     font-size: 1.5rem;
-    width:40%;
+    /* width:40%; */
     
     -webkit-text-fill-color: whitesmoke;
-   display: inline;
-   float:left;
+   /* display: inline;
+   float:left; */
+   /* grid-area: Quotes; */
    
 }
 
@@ -125,8 +142,11 @@ body::-webkit-scrollbar{
 
 .intro {
   margin: 10vh 0 20vh 0;
-  position:relative;
-  top:12rem;
+   position:relative;
+  top:15rem; 
+  
+ 
+  /* grid-area: intro; */
 }
 
 #NEOS {
@@ -150,10 +170,7 @@ body::-webkit-scrollbar{
   text-decoration: none;
 }
 
-.components{
-  position:absolute;
-  top:58rem;
-}
+
 .part1 {
   display: grid;
   margin: 0rem 5rem 0rem 5rem;
@@ -231,17 +248,33 @@ body::-webkit-scrollbar{
 
 .partition  {
 
-  position :absolute;
+  /* position :absolute;
 
-  top: 172rem;
-  width: 100%;
-  height:10px;
+  top: 172rem; */
+ 
+  width: 100vw;
+  
   background-color: var(--primary);
   
   /* color:var(--primary); */
   background-color: var(--primary);
-  height:2px;
+  height:1px;
+ 
   
+}
+
+.wholeBody{
+  display:grid;
+  height:100vh;
+ grid-template-columns: 100vw;
+  
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: "navbar" 
+  "intro"
+  "quoteSection"
+  "components"
+  "partition"
+  "footer";
 }
 
 
