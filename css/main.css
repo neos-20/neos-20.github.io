@@ -23,7 +23,7 @@ body::-webkit-scrollbar{
 .navbar {
   justify-content: space-around;
   display: flex;
-  background-color: var(--dark);
+  background-color: black;
   transition: 0.4s;
 }
 .sticky {
@@ -51,6 +51,7 @@ body::-webkit-scrollbar{
 
 .options > div > a:hover {
   color: var(--primary);
+  border-bottom: 2px solid var(--primary);
 }
 
 /* intro */
