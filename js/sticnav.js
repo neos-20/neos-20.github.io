@@ -21,7 +21,24 @@ function scrollfunc() {
         document.getElementById("navbar").style.padding = "0px 0px";
 
     } else {
-        document.getElementById("navbar").style.padding = "20px 0px";
+        document.getElementById("navbar").style.padding = "10px 0px";
 
+    }
+}
+
+let Menu=document.getElementById("toggleMenu");
+Menu.addEventListener("click", toggle);
+
+function toggle(){
+    activeToggle();
+}
+function activeToggle(){
+    if(Menu.getAttribute("data")=="inactive"){
+        Menu.setAttribute("data","active");
+        console.log(Menu);
+    }
+    else{
+        Menu.setAttribute("data","inactive");
+        console.log(Menu);
     }
 }
