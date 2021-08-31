@@ -3,132 +3,126 @@ footer{
     bottom: 0;
     left: 0px;
     width: 100%;
-    background: hsl(214, 90%, 69%);
+    background: rgb(0, 0, 0, 0.9) url(/assets/Group219.svg) top left no-repeat;
+    background-size: cover;
+ 
   }
+  /* .bgimg{
+     background: rgb(0, 0, 0, 0.9) url(/assets/Group219.svg) top left no-repeat;
+    background-size: cover; 
+  } */
   .img img{
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      filter: contrast(300%);
-    
-    
-      width: 70%;
-  }
-  .img .name h2{
-      text-align: center;
-      font-size:30px;
-  }
-  .main-content{
-    display: flex;
-    color: black;
-  }
-  .main-content .box{
-    flex-basis: 50%;
-    padding: 10px 20px;
-  }
-  .box h2{
-    font-size: 1.5rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    text-decoration: none;
-  }
-  .box a{
-    font-size: 1.3rem;
-    font-weight: 600;
-  
-    text-decoration: none;
-    color: black;
-    
-  }
-  .box .content{
-    margin: 20px 0 0 0;
-    position: relative;
-    
-  }
-  .box .content:before{
-    position: absolute;
-    content: '';
-    top: -10px;
-    height: 2px;
-    width: 100%;
-    background: #1a1a1a;
-  }
-  .box .content:after{
-    position: absolute;
-    content: '';
-    height: 2px;
-    width: 15%;
-    background: #1a1a1a;
-    top: -10px;
-  }
-  .left .content p{
-    text-align: justify;
-  }
-  .left .content .social{
-    margin: 20px 0 0 0;
-  }
-  .left .content .social a{
-    padding: 0 2px;
-  }
-  .left .content .social a span{
-    height: 40px;
-    width: 40px;
-    background: #1a1a1a;
-    line-height: 40px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    filter: contrast(300%);
+    width: 60%;
+}
+.img .name h2{
     text-align: center;
-    font-size: 18px;
-    border-radius: 5px;
-    transition: 0.3s;
-  }
-  .left .content .social a span:hover{
-    background: #1a1a1a;
-  }
+    font-size:30px;
+    color:white;
+}
+.main-content{
+  display: flex;
+  color: black;
+}
+.main-content .box{
+  flex-basis: 90%;
+  padding: 10px 20px;
+}
+.box h2{
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.box a{
+  font-size: 1.3rem;
+  font-weight: 600;
+
+  text-decoration: none;
+  color: black;
+  
+}
+.box .content{
+  margin: 20px 0 0 0;
+  position: relative;
+  
+}
+.box .content:before{
+  position: absolute;
+  content: '';
+  top: -10px;
+  height: 2px;
+  width: 100%;
+  background: #1a1a1a;
+}
+.box .content:after{
+  position: absolute;
+  content: '';
+  height: 2px;
+  width: 15%;
+  background: #1a1a1a;
+  top: -10px;
+}
+
+
 
   .right form .text{
-    font-size: 1.0625rem;
+    font-size: 1.5rem;
     margin-bottom: 2px;
-    color: black;
+    color: rgb(255, 255, 255);
+    background-color:#363437;
+    border-radius: 12px;
+    padding-left: 5px;
+    width: 80%;
+    
   }
   .right form .msg{
     margin-top: 10px;
   }
   .right form input, .right form textarea{
-    width: 100%;
+    width: 80%;
     font-size: 1.0625rem;
-    background: hsl(214, 100%, 81%);
+    background: white;
     padding-left: 10px;
     border: none;
-    border-radius:10px;
+    border-radius:12px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
-  .right form input:focus,
+ 
+
   .right form textarea:focus{
-    outline-color: #3498db;
+   outline: none;
   }
   .right form input{
-    height: 35px;
+    height: 32px;
   }
   .right form .btn{
     margin-top: 10px;
   }
   .right form .btn button{
     height: 40px;
-    width: 100%;
+    width: 30%;
     border: none;
+    float: left;
     outline: none;
     background: white;
     font-size: 1.0625rem;
     font-weight: 500;
     cursor: pointer;
-    border-radius:10px;
-    transition: .3s;
+    border-radius:12px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);;
+    transition: 0.3s;
   }
   .right form .btn button:hover{
     background: white;
-  }
+  } */
   .bottom center{
     padding: 5px;
     font-size: 0.9375rem;
-    background: #151515;
+    background: black;
   }
   .bottom center span{
     color: white;
@@ -140,3 +134,5 @@ footer{
   .bottom center a:hover{
     text-decoration: underline;
   }
+
+ 

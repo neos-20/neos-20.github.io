@@ -1,7 +1,9 @@
 body{
     margin: 0;
     padding: 0;
-}
+    background-color: black;
+    font-family: 'Sarabun', sans-serif;
+  font-weight: 25px;}
 
 /* navbar */
 
@@ -46,11 +48,12 @@ body{
   }
 
   #abouthead{
-      height: 50px;
-      width: 196px;
       background-color: white;
+      background: #FFFFFF;
+      box-shadow: 0px 8px 4px rgba(0, 0, 0, 0.25);
+      padding:0.6rem;
       color: #7c7a7aaf;
-      font-size: 25px;
+      font-size: 20px;
       border-radius: 13px;
       display: flex;
       justify-content: center;
@@ -60,11 +63,30 @@ body{
       
   }
   #tagline{
+      font-family: 'Comfortaa', cursive;
       font-size: 35px;
       margin-bottom: 10px;
+      color: #3B3C36;
+      font-size: 50px;
+      line-height: 56px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
   }
   #msg{
-      margin: 40px;
+      margin-top:5rem;
+      margin-bottom:8rem;
+      width:90%;
+      font-family: 'Dancing Script', cursive;
+      font-size: 30px;
+      line-height: 40px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      color: #9B9999;
+
   }
 
   /* Interactive Alley */
@@ -73,41 +95,246 @@ body{
       display: flex;
       align-items: center;
       justify-content: center;
-      height: 480px;
-      background-image: url(../assets/alley.jpg);
+      height: 46rem;
+      background-image: url(../assets/interactive\ alley\ box.png);
       background-repeat: no-repeat;
-      background-size: cover;
+       width: 100%;
+      background-size:100% auto;
 
   }
 
+  
   #text{
       color: white;
-      font-size: 50px;
+      font-size: 70px;
   }
 
 
   /* Events */
-  .event{
-      display: flex;
+  .event{margin-top: 2rem;
+    margin-bottom: 8rem;
+        display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       background-color: rgba(0, 0, 0, 0.856);
-      height: 600px;
+
   }
 
   #eventhead{
       margin: 40px;
       color: white; 
       font-size: 50px;
+      margin-bottom: 0;
      }
 
-  #eventbody{
+  
+     #eventbody{
       margin: 50px;
   }
 
-  #eventimg{
-      height: 350px;
-      width: 350px;
-      border-radius: 100px;
+
+  .carousel {box-sizing: border-box;
+    align-items: center;
+    display: flex;
+    margin: auto;
+    position: relative;
+    width: 50rem;
+    padding: 0;
+    overflow: hidden;
+    height:400px
   }
+  
+  .card {
+    width: 50rem;
+    text-align: center;
+    border: 1px solid black;
+    box-sizing: border-box;
+    
+  }
+  
+  .images {
+    align-items: center;
+    display: flex;
+    transform: translateX(0);
+    transition: transform 0.25s;
+  }
+  
+  
+  .active {
+   z-index: 1;
+  }
+  
+ 
+  .buttonspn {
+    background-color: black;
+    border: 0;
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+    font-size: 4rem;
+    font-weight: bold;
+    height: 3rem;
+    opacity: 0.4;
+    position: absolute;
+    transition: opacity 0.25s;
+    width: 3rem;
+    z-index: 1;
+  }
+  
+  #previous {
+    left: 0.3rem;
+  }
+  
+  #next {
+    right: 0.3rem;
+  }
+  
+  button:hover {
+    opacity: 0.5;
+  }
+  
+  #holdc {
+    width: 80%;
+    overflow: hidden;
+  }
+
+  .card_container{
+   box-sizing: border-box;
+   display: flex;
+   height:250px;
+   width:250px;
+   margin: auto;
+   overflow: hidden;
+   transition: all 500ms ease-in;
+   transition-delay: 1s;
+   margin: auto;
+   margin-top: 100px;
+   margin-bottom: 100px;
+   --margin-top: 100px;
+  }
+  
+  .slider{
+      display: flex;
+  }
+  
+  .card_container:hover {
+    background:#EDECEC;;
+    height:250px;
+    width: 500px;
+    border-radius: 120px 10px 100px 120px;
+    transition: all 1s ease-out;
+  }
+  
+  .card_container div {
+       flex-shrink: 1;
+      }
+    
+  .card_container #textbox {
+       position: relative;
+     }
+  
+   #textbox{
+     padding: 1rem;
+   }   
+  
+  .card_container #main{
+   box-sizing: border-box;
+   width:250px;
+  
+  }
+  
+   .card_container #main img{
+   box-sizing: border-box;
+   border: 10px solid#EDECEC;
+   height:250px;
+   width: 250px;
+   border-radius: 100%;
+  }
+ 
+  @media (max-width: 850px){
+   .card_container{
+       flex-direction: column;
+  }
+  .card_container:hover{
+   height:500px;
+   width: 250px;
+   border-radius: 120px 120px 10px 100px;
+   transition: all 1s ease-out;
+  }
+  
+  .card {width: 25rem;
+    text-align: center;
+    border: 1px solid black;
+    box-sizing: border-box;
+    
+  }
+
+  .carousel {
+    width: 25rem;
+    height:600px;
+    margin-top: 2rem;
+  }
+  }
+
+  @media (max-width: 1100px){
+    .alleybox{
+      height:35rem;
+    }
+  }
+  @media (max-width: 920px){
+    .alleybox{
+      height:25rem;
+    }
+    .event{
+      margin-top: 0;
+    }
+  }
+  @media (max-width: 720px){
+    .alleybox{
+      height:20rem;
+    }
+    .event{
+      margin-top: 0;
+    }
+    #tagline{
+      font-size:36px;
+    }
+    #msg{
+      font-size: 27px;
+      margin-top: 4rem;
+      margin-bottom: 6rem;
+    }
+  }
+ 
+  @media (max-width: 600px){
+  #text{font-size:40px;}
+  #eventhead{
+    margin-bottom: 0;
+  }
+
+  }
+
+  @media (max-width: 540px){
+    .alleybox{
+      height:17rem;
+    }}
+
+
+  @media (max-width: 450px){
+      .alleybox{
+        height:14rem;
+      }
+      #tagline{
+        font-size:30px;
+      }
+      #msg{
+        font-size: 22px;
+        margin-top: 2rem;
+        margin-bottom: 4rem;
+      }
+      #eventhead{font-size:35px;}
+    .carousel{
+      margin-top: 0;
+    }}
+      

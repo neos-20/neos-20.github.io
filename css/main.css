@@ -19,13 +19,23 @@ body {
 .navbar {
   justify-content: space-around;
   display: flex;
+  background-color: #3d3939;
+  transition: 0.4s;
 }
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+
 #logo {
   opacity: 0;
 }
 .options {
   text-align: right;
-  margin: 2rem 0rem;
+  margin: 0.3rem;
 }
 
 .options > div {
@@ -105,7 +115,7 @@ body {
 }
 
 .part1 .ourcom .webdt h2 {
-  font-size: 1.875rem;
+  font-size: 2.5rem;
   border-left: 0.313rem solid var(--primary);
   padding-left: 1.25rem;
   margin-bottom: 1.875rem;
@@ -113,15 +123,40 @@ body {
 
 .part1 .ourcom .appdt h2 {
   text-align: right;
-  font-size: 1.875rem;
+  font-size: 2.5rem;
   border-right: 0.313rem solid var(--primary);
   padding-right: 1.25rem;
 }
 
 .part1 .ourcom .designt h2 {
-  font-size: 1.875rem;
+  font-size: 2.5rem;
   border-left: 0.313rem solid var(--primary);
   padding-left: 1.25rem;
+}
+.imgtxt1 img{
+  width: 30%;
+  float: right;
+  border-radius: 30px;
+  margin-left: 40px;
+  margin-bottom: 50px;
+  box-shadow: 10px 10px var(--primary);
+}
+.imgtxt2 img{
+  width:30%;
+  border-radius: 30px;
+  float: left;
+  margin-right: 40px;
+  margin-bottom: 50px;
+  box-shadow: 10px 10px var(--primary);
+}
+.imgtxt3 img{
+ width: 30%;
+ float: right;
+ border-radius: 30px;
+ margin-left: 40px;
+ margin-bottom: 50px;
+ box-shadow: 10px 10px var(--primary);
+
 }
 .image1 {
   position: absolute;

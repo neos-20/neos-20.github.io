@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
     <link rel="stylesheet" href="./css/about.css">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Dancing+Script&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Dancing+Script&family=Sarabun:wght@300&display=swap" rel="stylesheet">
+
+
 </head>
 <body>
     <!-- navigation -->
@@ -31,21 +36,57 @@
 
     <div class="aboutus">
         <div id="abouthead">ABOUT US</div>
-        <div id="tagline">None of us is as Good as All of Us</div>
-        <div id="msg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure veritatis tenetur ut optio incidunt vero consectetur debitis, voluptatum adipisci nisi dolore repudiandae impedit accusantium similique illo repellat cupiditate. Corrupti cum, similique quidem neque culpa explicabo ipsum debitis amet quas iure non, dolorem nisi. Ipsam repudiandae eum reiciendis. Facere, nulla fugiat.</div>
+        <div id="tagline">None of us is as Good <br> as All of Us</div>
+        <div id="msg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure veritatis tenetur ut optio incidunt vero consectetur 
+            debitis, voluptatum adipisci nisi dolore repudiandae impedit accusantium 
+            similique illo repellat cupiditate. Corrupti cum, similique quidem 
+   </div>
     </div>
 
     <!-- interactive alley -->
 
-    <div class="alleybox">
-        <p id="text">Interactive Alley</p>
+    <div class="alleybox">        
+    <p id="text">Interactive Alley</p>
     </div>
 
     <!-- Events -->
     <div class="event">
         <div id="eventhead">Events</div>
-        <div id="eventbody"><img id="eventimg" src="./assets/eventcat.png" ></div>
-    </div>
+        <div class="carousel">  
+            <button class="buttonspn" id="previous"> < </button>
+               <div class="images">
+                 <div class="card">                
+                   <div class="card_container">
+                     <div id="main"><img src="/assets/cat1.png"></img></div>
+                     <div id="textbox">
+                       <h2>Podcast</h2>
+                       <h4>Lorem ipsum dolor sit<br> amet consectetur adipisi<br> elit. Delectus, vitae!</h4>
+                     </div> 
+                   </div>
+                 </div>
+                 <div class="card">                
+                   <div class="card_container">
+                     <div id="main"><img src="assets/cat2.jpeg"></img></div>
+                     <div id="textbox">
+                       <h2>Podcast</h2>
+                       <h4>Lorem ipsum dolor sit<br> amet consectetur adipisi<br> elit. Delectus, vitae!</h4>
+                     </div> 
+                   </div>
+                 </div>
+                 <div class="card">                
+                   <div class="card_container">
+                     <div id="main"><img src="assets/cat3.jpg"></img></div>
+                     <div id="textbox">
+                       <h2>Podcast</h2>
+                       <h4>Lorem ipsum dolor sit<br> amet consectetur adipisi<br> elit. Delectus, vitae!</h4>
+                     </div> 
+                   </div>
+                 </div>
+               </div>
+             <button class="buttonspn" id="next">></button>
+           </div>
+       </div>
 
 </body>
+<script src="js/about.js"></script>
 </html>
