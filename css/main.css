@@ -246,34 +246,57 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .components{
-  position:absolute;
-  /* top:58rem; */
+  /* position:absolute;
+  top:58rem; */
 }
 .part1 {
   display: grid;
-  margin: 0rem 5rem 0rem 5rem;
-  padding: 10vh;
+  margin: 0rem;
+  /* padding: 10vh; */
+}
+.part1 .ourcom{
+  width: 70%;
+  margin: 0 auto;
 }
 
-.part1 .ourcom h1 {
+.part1 h1 {
+  margin-left: 20%;
   color: var(--primary);
   font-size: 4.375rem;
   border-bottom: 0.125rem solid var(--primary);
 }
+@media (max-width: 1000px) {
+  .part1 .ourcom{
+    width: 80%;
+  }
+  .part1 h1{
+    margin-left: 17%;
+    
+  }
+}
+@media (max-width: 760px) {
+  .part1 .ourcom{
+    width: 90%;
+  }
+  .part1 h1{
+    margin-left: 15%;
+    font-size: 4rem;
+  }
+}
 
 .part1 .ourcom .webdt {
   display: grid;
-  margin: 0rem 5rem 0rem 5rem;
+  /* margin: 0rem 5rem; */
   padding-left: 5vh;
 }
 .part1 .ourcom .appdt {
   display: grid;
-  margin: 0rem 5rem 0rem 5rem;
+  /* margin: 0rem 5rem; */
   padding-right: 5vh;
 }
 .part1 .ourcom .designt {
   display: grid;
-  margin: 0rem 5rem 0rem 5rem;
+  /* margin: 0rem 5rem; */
   padding-left: 5vh;
 }
 
@@ -298,10 +321,10 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 
- .imgtxt1 img{
-  width: 30%;
-  float: right;
-  border-radius: 30px;
+.imgtxt1 img{
+   width: 30%;
+   float: right;
+   border-radius: 30px;
   margin-left: 40px;
   margin-bottom: 50px;
   box-shadow: 10px 10px var(--primary);
@@ -315,8 +338,8 @@ body::-webkit-scrollbar-thumb:hover {
   box-shadow: 10px 10px var(--primary);
 }
 .imgtxt3 img{
- width: 30%;
- float: right;
+  width: 30%;
+  float: right;
  border-radius: 30px;
  margin-left: 40px;
  margin-bottom: 50px;
@@ -325,9 +348,9 @@ body::-webkit-scrollbar-thumb:hover {
 } 
 
 .partition  {
-
+  
   position :absolute;
-
+  
   top: 172rem;
   width: 100%;
   height:10px;
