@@ -12,14 +12,18 @@ body {
   margin: 0rem;
   padding: 0rem;
   font-family: "Saira Condensed", sans-serif;
+  overflow-y: scroll;
 }
 
 /* navbar */
 
+body::-webkit-scrollbar{
+  display: none;
+}
 .navbar {
   justify-content: space-around;
   display: flex;
-  background-color: #3d3939;
+  background-color: black;
   transition: 0.4s;
 }
 .sticky {
@@ -29,10 +33,6 @@ body {
   z-index: 1;
 }
 
-
-#logo {
-  opacity: 0;
-}
 .options {
   text-align: right;
   margin: 0.3rem;
@@ -50,21 +50,103 @@ body {
 }
 
 .options > div > a:hover {
-  color: var(--another);
+  color: var(--primary);
+  border-bottom: 2px solid var(--primary);
 }
 
 /* intro */
 
-.container {
+.container{
+  background-image: url(https://raw.githubusercontent.com/ayush-patel-78/neos-20.github.io/main/assets/bg%20img.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+
+  
+}
+.intro {
+
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin: 0rem 5rem 0rem 5rem;
-  padding: 10vh;
+  /* margin: 0rem 5rem 0rem 5rem; */
+  margin: 10vh 0 20vh 0;
+  padding-left: 17vh;
+  padding-top: 17vh;
 }
 
-.intro {
-  margin: 10vh 0 20vh 0;
+
+.part0{
+  display: grid;
+  margin:0;
+  padding-bottom: 5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
+
+.quotepara .m1 p{
+  font-size: 1.1rem;
+  float: left;
+  word-wrap: break-word;
+  width: 27%;
+}
+
+.quotepara .m2 p{
+  font-size: 1.1rem;
+  float: right;
+  word-wrap: break-word;
+  width: 27%;
+  
+}
+.quotepara .m3 {
+  position: absolute;
+  margin-left: 28%;
+ 
+ text-align: center;
+ font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+  background: var(--dark);
+  border: var(--primary) 2px solid;
+  padding: 1.5rem;
+  border-radius: 1.25rem;
+  font-size: 1.5rem;
+  width:37%;
+  
+
+}
+/* .quoteLeft p{
+  position:absolute;
+  top:50rem;
+  width:30%;
+  margin:1.25rem;
+  float:left;
+}
+.quoteLeft {
+  margin: 0;
+  pos
+}
+.quoteRight p{
+  width:30%;
+  position:absolute;
+  top:50rem;
+  margin:1.25rem;
+  float:right;
+
+} */
+
+/* .Quotes {
+ position: absolute;
+ align-items: center;
+ text-align: center;
+ font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+  background: var(--dark);
+  border: var(--primary) 2px solid;
+  padding: 1.5rem;
+  margin:1rem;
+  border-radius: 1.25rem;
+  font-size: 1.5rem;
+  width:40%;
+
+} */
+
+
 
 #NEOS {
   /* position: absolute; */
@@ -86,11 +168,15 @@ body {
   color: var(--textcolor);
   text-decoration: none;
 }
+
+
+
 .part1 {
   display: grid;
   margin: 0rem 5rem 0rem 5rem;
   padding: 10vh;
 }
+
 
 .part1 .ourcom h1 {
   color: var(--primary);
@@ -141,6 +227,7 @@ body {
   margin-bottom: 50px;
   box-shadow: 10px 10px var(--primary);
 }
+
 .imgtxt2 img{
   width:30%;
   border-radius: 30px;
@@ -158,7 +245,7 @@ body {
  box-shadow: 10px 10px var(--primary);
 
 }
-.image1 {
+/* .image1 {
   position: absolute;
   height: 9rem;
   width: 11rem;
@@ -205,4 +292,23 @@ body {
   right: 17rem;
   clip-path: circle(40%);
   overflow: hidden;
+} */
+
+html {
+  scroll-behavior: smooth;
+}
+
+.scrolltop{
+  float: right;
+  margin-right: 5rem;
+  margin-top: 1.5rem;
+  background-color: black;
+  border-radius: 12px;
+  padding-left: 5px;
+  padding-right: 5px;
+
+}
+
+.scrolltop:hover {
+  background-color: #737374;
 }

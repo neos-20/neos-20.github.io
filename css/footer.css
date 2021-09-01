@@ -3,36 +3,39 @@ footer{
     bottom: 0;
     left: 0px;
     width: 100%;
-    background: rgb(0, 0, 0, 0.9) url(/neos-20.github.io/assets/Group219.svg) top left no-repeat;
+  
+background-color: #2d3436;
+background-image: linear-gradient(300deg, rgb(165, 165, 165), rgb(43, 42, 42)80%);
+
     background-size: cover;
  
   }
-  /* .bgimg{
-     background: rgb(0, 0, 0, 0.9) url(/assets/Group219.svg) top left no-repeat;
-    background-size: cover; 
-  } */
+
   .img img{
     display: block;
     margin-left: auto;
     margin-right: auto;
     filter: contrast(300%);
-    width: 60%;
+    width: 40%;
 }
+
 .img .name h2{
     text-align: center;
     font-size:30px;
-    color:white;
+    color:whitesmoke;
 }
 .main-content{
   display: flex;
-  color: black;
+  color: rgb(255, 255, 255);
+ 
 }
 .main-content .box{
   flex-basis: 90%;
   padding: 10px 20px;
 }
 .box h2{
-  font-size: 1.5rem;
+  font-size: 1.7rem;
+  
   font-weight: 600;
   text-transform: uppercase;
   text-decoration: none;
@@ -42,7 +45,7 @@ footer{
   font-weight: 600;
 
   text-decoration: none;
-  color: black;
+  color: rgb(255, 255, 255);
   
 }
 .box .content{
@@ -69,57 +72,8 @@ footer{
 
 
 
-  .right form .text{
-    font-size: 1.5rem;
-    margin-bottom: 2px;
-    color: rgb(255, 255, 255);
-    background-color:#363437;
-    border-radius: 12px;
-    padding-left: 5px;
-    width: 80%;
-    
-  }
-  .right form .msg{
-    margin-top: 10px;
-  }
-  .right form input, .right form textarea{
-    width: 80%;
-    font-size: 1.0625rem;
-    background: white;
-    padding-left: 10px;
-    border: none;
-    border-radius:12px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  }
  
-
-  .right form textarea:focus{
-   outline: none;
-  }
-  .right form input{
-    height: 32px;
-  }
-  .right form .btn{
-    margin-top: 10px;
-  }
-  .right form .btn button{
-    height: 40px;
-    width: 30%;
-    border: none;
-    float: left;
-    outline: none;
-    background: white;
-    font-size: 1.0625rem;
-    font-weight: 500;
-    cursor: pointer;
-    border-radius:12px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);;
-    transition: 0.3s;
-  }
-  .right form .btn button:hover{
-    background: white;
-  } */
-  .bottom center{
+  .bottom center{ 
     padding: 5px;
     font-size: 0.9375rem;
     background: black;
@@ -134,5 +88,13 @@ footer{
   .bottom center a:hover{
     text-decoration: underline;
   }
+
+ .contact h3{
+   font-weight: 800;
+   font-size:1.3rem;
+   color: black;
+   word-break: break-word;
+   
+ }
 
  
