@@ -4,7 +4,7 @@
 
 # Contribute
 
-read [this](https://github.com/neos-20/neos-20.github.io/blob/main/git.md)
+read [this](https://github.com/neos-20/neos-20.github.io/blob/main/CONTRIBUTING.md)
 
 
 
@@ -12,4 +12,4 @@ read [this](https://github.com/neos-20/neos-20.github.io/blob/main/git.md)
   <img src="https://contrib.rocks/image?repo=neos-20/neos-20.github.io" />
 </a>
 
-Made with [contributors-img](https://contrib.rocks).
+
