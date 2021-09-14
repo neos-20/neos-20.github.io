@@ -35,7 +35,7 @@ function scrollfunc() {
      let ham=document.querySelector('.hamberger');
      let times=document.querySelector('.times');
      let mobnav=document.querySelector('.mobile-nav');
-     let blur=document.querySelector('.blur');
+     let blur=document.querySelector('.container');
 
      ham.addEventListener('click', function(){
          mobnav.classList.add('open');
