@@ -22,18 +22,37 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@400;500&display=swap" rel="stylesheet">
-   
 </head>
 
 <body>
-  <div class="wholeBody">
 
- 
+    <!-- Mobile nav -->
+    <div class="site-main-wrapper">
+      <button class="hamberger">
+        <img src="./assets/hamberger.svg" alt="" onclick="hamberger()"/>
+      </button>
+
+      <div class="mobile-nav">
+        <button class="times">
+          <img src="./assets/Icon.svg" alt="" />
+        </button>
+        
+        <ul>
+          
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#Contact">Contact</a></li>
+          <li><a href="github">Github</a></li>
+        </ul>
+       
+      </div>
 
     <!-- navigation -->
-
+    
     <div class="navbar" id="navbar">
-
+        
         <img id="logo" src="./assets/neoslogo.png" />
 
         <div class="options" id="options">
@@ -44,15 +63,16 @@
             <div><a href="#">Portfolio</a></div>
             <div><a href="#">Blog</a></div>
             <div><a href="#">Contact</a></div>
+            <img src="./assets/Menu.png" alt="" srcset="" id="toggleMenu" data="inactive">
             <div><a href="#" style="color:#43b7ff;" onMouseOver="this.style.color = '#43b7ff'"
-                onMouseOut="this.style.color='#43b7ff'" >GitHub</a></div>
-        </div>
-
+              onMouseOut="this.style.color='#43b7ff'" >GitHub</a></div>
+            </div>
+            
     </div>
 
     <!-- intro -->
 
-    <div class="container">
+    <div class="container blur">
         
         <!-- text -->
         <div class="intro">
@@ -68,15 +88,10 @@
                 </span>
                 <br>
         </div>
-
         <!-- image -->
-        <div class="bgImg">
-
+        <!-- <div class="bgImg">
             <img src="./assets/bg img.png" alt="" width="1519px;">
-
-        </div>
-      
-        
+        </div>  -->
         <!-- <div class="image1">
             <img src="./assets/image_bg.jpeg?raw=true"/>
         </div>
@@ -92,23 +107,22 @@
         <div class="image5">
             <img src="./assets/image_bg.jpeg?raw=true"/>
         </div> -->
-    </div>
-    <div class="quoteSection">
+        
+        
+        <div class="quoteLeft">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi aliquid cupiditate quas est ducimus asperiores ipsa quam sed sequi eum. Ipsum dolor vel odio.</div>
+        <div class="Quotes">
+            Creativity is contagious<br>
+                  Pass it on
+        </div>
+        <div class="quoteRight">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus pariatur rem soluta? Debitis distinctio suscipit repudiandae quaerat unde nemo. Natus excepturi assumenda repudiandae reprehenderit.</div>
+      </div>
 
-    
-    <div class="quoteLeft">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi aliquid cupiditate quas est ducimus asperiores ipsa quam sed sequi eum. Ipsum dolor vel odio.</div>
-    <div class="Quotes">
-        Creativity is contagious<br>
-              Pass it on
-    </div>
-    <div class="quoteRight">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus pariatur rem soluta? Debitis distinctio suscipit repudiandae quaerat unde nemo. Natus excepturi assumenda repudiandae reprehenderit.</div>
-    </div>
       <!-- section 1 -->
       <section class="part1">
           <div class="components">
 
+            <h1> Our Community </h1>
             <div class="ourcom" id="ourcom">
-                <h1> Our Community </h1>
                 <div class="webdt" id="webdt">
                   <h2> Web Development Team</h2> 
                   <div class="imgtxt1">
@@ -144,7 +158,7 @@
        
         
       </section>
-        <div class="partition"></div>
+        <!-- <div class="partition"></div> -->
            
         
   
@@ -152,11 +166,7 @@
     
     <!-- footer -->
     <footer>
-      <div class="partition"></div>
-      <div class="footer">
-
-      
-        <div class="footerLogo img">
+        <div class="footerLogo">
             <img src="assets/logo.svg">
             <div class="name">
                 <h2> NEOS Initiative</h2>
@@ -203,10 +213,7 @@
             </ul>
 
         </div>
-      </div>  
     </footer>
-
-  </div>  
 
 
 
@@ -346,8 +353,6 @@
                             </svg>
               </div>
             </div>
-
-
             <div class="right box">
               <h2>Reach Us</h2>
               <div class="content">
