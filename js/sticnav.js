@@ -25,3 +25,25 @@ function scrollfunc() {
 
     }
 }
+
+// hamberger function
+
+
+
+ function hamberger()
+ {
+     let ham=document.querySelector('.hamberger');
+     let times=document.querySelector('.times');
+     let mobnav=document.querySelector('.mobile-nav');
+     let blur=document.querySelector('.blur');
+
+     ham.addEventListener('click', function(){
+         mobnav.classList.add('open');
+         blur.classList.add('blur');
+     });
+
+     times.addEventListener('click',function(){
+         mobnav.classList.remove('open');
+         blur.classList.remove('blur');
+     });
+ }
