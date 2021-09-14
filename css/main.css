@@ -1,6 +1,7 @@
+
 :root {
   --primary: #43b7ff;
-  --dark: rgb(0, 0, 0, 0.9);
+  --dark: rgb(0, 0, 0);
   --another: #ff58d7;
   --textcolor: #c1c1c1;
 }
@@ -12,6 +13,20 @@ body {
   margin: 0rem;
   padding: 0rem;
   font-family: "Saira Condensed", sans-serif;
+  overflow-y: scroll;
+}
+
+body::-webkit-scrollbar {
+  width: 0.7em;
+}
+body::-webkit-scrollbar-thumb {
+  border-radius: 100px;
+  box-shadow: inset 0 0 6px rgb(56, 55, 55);
+  background-color: rgb(109, 107, 107);
+}
+body::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(221, 221, 221);
+  box-shadow: inset 0 0 6px rgb(0, 0, 0) !important;
 }
 
 /* navbar */
@@ -19,7 +34,7 @@ body {
 .navbar {
   justify-content: space-around;
   display: flex;
-  background-color: #3d3939;
+  background-color: var(--dark);
   transition: 0.4s;
 }
 .sticky {
@@ -31,17 +46,21 @@ body {
 
 
 #logo {
-  opacity: 0;
+  opacity: 1;
 }
 .options {
+  display: flex;
+  align-items: center;
   text-align: right;
   margin: 0.3rem;
 }
 
 .options > div {
-  padding: 1rem;
+  
+  padding : 1.5rem 1.2rem;
+  
   display: inline-block;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
 }
 
 .options > div > a {
@@ -50,26 +69,127 @@ body {
 }
 
 .options > div > a:hover {
-  color: var(--another);
+  color: var(--primary);
+  border-bottom: var(--primary) 3px solid ;
+  border-radius: 5px;
+}
+
+.options img{
+  display: none;
+}
+
+@media (max-width: 1000px) {
+  .options > div{
+    font-size: 1rem;
+  }
+}
+@media (max-width: 760px) {
+  .options div{
+    display: none;
+    position: relative;
+  }
+  .options img{
+    display: block;
+    width: 3.5em;
+    margin-right: 1rem;
+  }
+  .navbar{
+    justify-content: space-between;
+  }
 }
 
 /* intro */
 
 .container {
+  background-image: url("bg img.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin: 0rem 5rem 0rem 5rem;
   padding: 10vh;
+  padding-top: 21vh;
+  grid-template-areas: 
+  "top top top top top top"
+  "left center center center center right";
+  grid-row-gap: 8.5em;
+  grid-column-gap: 3em;
+  justify-content: center;
+  align-items: center;
 }
+
+
+/* Quotes  */
+.quoteLeft{
+    grid-area: left;
+  }
+  .quoteRight{
+    grid-area: right;
+  }
+  
+  .Quotes {
+    grid-area: center;
+    justify-content: center;
+    text-align: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+    
+    background: var(--dark);
+    border: var(--primary) 2px solid;
+    padding: 0.8em 7em;
+    border-radius: 1.25rem;
+    font-size: 1.5rem;
+    -webkit-text-fill-color: whitesmoke;
+}
+
+
 
 .intro {
-  margin: 10vh 0 20vh 0;
+  grid-area: top;
+  padding-left: 12rem;
+}
+@media (max-width: 1200px){
+  .Quotes{
+    padding: 0.8rem 3rem;
+  }
+}
+@media (max-width: 1000px){
+  .container{
+    grid-template-areas: "top top"
+    "center center"
+    "left right";
+  }
+}
+@media (max-width: 760px) {
+  .container{
+    grid-template-areas: "top "
+    "center "
+    "left "
+    "right";
+    grid-row-gap: 4em;
+  }
+  .intro{
+    padding-left: 4rem;
+    margin-bottom: 5em;
+  }
+  .Quotes{
+    padding: 1em;
+  }
+  .quoteLeft{
+    padding: 0em 3em;
+    text-align: center;
+  }
+  .quoteRight{
+    padding: 0em 3em;
+    text-align: center;
+  }
+  .components{
+    top: 68rem;
+  }
 }
 
-#NEOS {
-  /* position: absolute; */
-  left: 4.974rem;
 
+#NEOS {
+  left: 4.974rem;
+  
   font-style: normal;
   font-weight: 500;
   font-size: 5.5rem;
@@ -86,31 +206,54 @@ body {
   color: var(--textcolor);
   text-decoration: none;
 }
+
+.components{
+  border-bottom: 3px solid var(--primary);
+}
 .part1 {
   display: grid;
-  margin: 0rem 5rem 0rem 5rem;
-  padding: 10vh;
+  margin: 0rem;
+}
+.part1 .ourcom{
+  width: 70%;
+  margin: 0 auto;
 }
 
-.part1 .ourcom h1 {
+.part1 h1 {
+  margin-left: 20%;
   color: var(--primary);
   font-size: 4.375rem;
   border-bottom: 0.125rem solid var(--primary);
 }
+@media (max-width: 1000px) {
+  .part1 .ourcom{
+    width: 80%;
+  }
+  .part1 h1{
+    margin-left: 17%;
+    
+  }
+}
+@media (max-width: 760px) {
+  .part1 .ourcom{
+    width: 90%;
+  }
+  .part1 h1{
+    margin-left: 15%;
+    font-size: 4rem;
+  }
+}
 
 .part1 .ourcom .webdt {
   display: grid;
-  margin: 0rem 5rem 0rem 5rem;
   padding-left: 5vh;
 }
 .part1 .ourcom .appdt {
   display: grid;
-  margin: 0rem 5rem 0rem 5rem;
   padding-right: 5vh;
 }
 .part1 .ourcom .designt {
   display: grid;
-  margin: 0rem 5rem 0rem 5rem;
   padding-left: 5vh;
 }
 
@@ -133,10 +276,12 @@ body {
   border-left: 0.313rem solid var(--primary);
   padding-left: 1.25rem;
 }
+
+
 .imgtxt1 img{
-  width: 30%;
-  float: right;
-  border-radius: 30px;
+   width: 30%;
+   float: right;
+   border-radius: 30px;
   margin-left: 40px;
   margin-bottom: 50px;
   box-shadow: 10px 10px var(--primary);
@@ -150,15 +295,21 @@ body {
   box-shadow: 10px 10px var(--primary);
 }
 .imgtxt3 img{
- width: 30%;
- float: right;
+  width: 30%;
+  float: right;
  border-radius: 30px;
  margin-left: 40px;
  margin-bottom: 50px;
  box-shadow: 10px 10px var(--primary);
 
-}
-.image1 {
+} 
+
+
+/* previous image CSS  */
+/* Bhut mehnat ki thi nakshtra ne 🙂🙂 */
+
+
+/* .image1 {
   position: absolute;
   height: 9rem;
   width: 11rem;
@@ -205,4 +356,4 @@ body {
   right: 17rem;
   clip-path: circle(40%);
   overflow: hidden;
-}
+}  */

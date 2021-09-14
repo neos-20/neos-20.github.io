@@ -1,17 +1,134 @@
+:root {
+    --primary: #43b7ff;
+    --dark: rgb(0, 0, 0);
+    --another: #ff58d7;
+    --textcolor: #c1c1c1;
+  }
+
 footer{
-    position: relative;
-    bottom: 0;
+     display: flex;
+     justify-content: space-evenly;
+ }
+  .footerLogo img{
+   display: block;
+   margin:  auto;
+   filter: contrast(300%);
+   height:12rem;
+   
+  }
+  .footerLogo .name h2{
+    margin: 0 auto;
+    text-align: center;
+   font-family: "Saira Condensed", sans-serif;
+   font-size:2rem;
+   color:var(--textcolor);
+  }
+  
+  .links h2{
+   font-size: 2rem;
+   border-bottom:var(--textcolor) 2px solid;
+   border-radius: 2px;
+  }
+  .links ul{
+    padding-left: 0px;
+    list-style-type: none;
+  }
+  .links ul li{
+    width: 70%;
+    margin: 0rem auto;
+    font-size: 1.2rem;
+  }
+  .links ul li a{
+    text-decoration: none;
+    color:var(--textcolor);
+    transition: 0.2s;
+  }
+  .links ul li a:hover{
+    font-size: 1.4rem;
+    color:var(--primary)
+  }
+
+  .social h2{
+    text-align: center;
+    width: 70%;
+    margin: 0.83em auto;
+    font-size: 2rem;
+    border-bottom:var(--textcolor) 2px solid;
+    border-radius: 2px;
+  }
+  
+  .social .component ul {
+    display: flex;   
+    padding: 0;
+    justify-content: space-around;
+    
+  }
+  .component ul div{
+    padding: 0rem 0.6rem;
+  }
+  
+  .contact h2{
+    font-size: 2rem;
+    border-bottom:var(--textcolor) 2px solid;
+    border-radius: 2px;
+  }
+  .contact ul{
+    list-style-type: none;
+    padding: 0;
+  }
+  .contact ul li {
+    font-size: 1.5rem;
+  }
+
+  @media (max-width: 760px) {
+    .footerLogo img{
+      height: 8rem;
+    }
+    .footerLogo .name h2{
+      font-size: 1.4rem;
+    }
+
+    .links h2{
+      font-size: 1.6rem;
+    }
+
+    .social h2{
+      font-size: 1.6rem;
+    }
+    .social .component ul {
+      display: flex;   
+      padding: 0;
+      justify-content: space-around;
+      
+    }
+    .component ul div{
+      padding: 0.2rem;
+    }
+    .component ul div img{
+      width: 2em;
+    }
+    .contact h2{
+      font-size: 1.6rem;
+    }
+    .contact ul li {
+      font-size: 1.1rem;
+    }
+  }
+  
+  /* footer{
+    /* position : relative; */
+    /* bottom: 0;
     left: 0px;
     width: 100%;
     background: rgb(0, 0, 0, 0.9) url(/assets/Group219.svg) top left no-repeat;
     background-size: cover;
- 
-  }
+    
+  } */ 
   /* .bgimg{
-     background: rgb(0, 0, 0, 0.9) url(/assets/Group219.svg) top left no-repeat;
+    background: rgb(0, 0, 0, 0.9) url(/assets/Group219.svg) top left no-repeat;
     background-size: cover; 
   } */
-  .img img{
+  /* .img img{
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -19,9 +136,9 @@ footer{
     width: 60%;
 }
 .img .name h2{
-    text-align: center;
-    font-size:30px;
-    color:white;
+  text-align: center;
+  font-size:30px;
+  color:white;
 }
 .main-content{
   display: flex;
@@ -40,7 +157,7 @@ footer{
 .box a{
   font-size: 1.3rem;
   font-weight: 600;
-
+  
   text-decoration: none;
   color: black;
   
@@ -69,70 +186,68 @@ footer{
 
 
 
-  .right form .text{
-    font-size: 1.5rem;
-    margin-bottom: 2px;
-    color: rgb(255, 255, 255);
-    background-color:#363437;
-    border-radius: 12px;
-    padding-left: 5px;
-    width: 80%;
-    
-  }
-  .right form .msg{
-    margin-top: 10px;
-  }
-  .right form input, .right form textarea{
-    width: 80%;
-    font-size: 1.0625rem;
-    background: white;
-    padding-left: 10px;
-    border: none;
-    border-radius:12px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  }
- 
+.right form .text{
+  font-size: 1.5rem;
+  margin-bottom: 2px;
+  color: rgb(255, 255, 255);
+  background-color:#363437;
+  border-radius: 12px;
+  padding-left: 5px;
+  width: 80%;
+  
+}
+.right form .msg{
+  margin-top: 10px;
+}
+.right form input, .right form textarea{
+  width: 80%;
+  font-size: 1.0625rem;
+  background: white;
+  padding-left: 10px;
+  border: none;
+  border-radius:12px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
 
-  .right form textarea:focus{
-   outline: none;
-  }
-  .right form input{
-    height: 32px;
-  }
-  .right form .btn{
-    margin-top: 10px;
-  }
-  .right form .btn button{
-    height: 40px;
-    width: 30%;
-    border: none;
-    float: left;
-    outline: none;
-    background: white;
-    font-size: 1.0625rem;
-    font-weight: 500;
-    cursor: pointer;
-    border-radius:12px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);;
-    transition: 0.3s;
-  }
-  .right form .btn button:hover{
-    background: white;
-  } */
-  .bottom center{
-    padding: 5px;
-    font-size: 0.9375rem;
-    background: black;
-  }
-  .bottom center span{
-    color: white;
-  }
-  .bottom center a{
-    color: #43b7ff;
-    text-decoration: none;
-  }
-  .bottom center a:hover{
-    text-decoration: underline;
-  }
 
- 
+.right form textarea:focus{
+  outline: none;
+}
+.right form input{
+  height: 32px;
+}
+.right form .btn{
+  margin-top: 10px;
+}
+.right form .btn button{
+  height: 40px;
+  width: 30%;
+  border: none;
+  float: left;
+  outline: none;
+  background: white;
+  font-size: 1.0625rem;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius:12px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);;
+  transition: 0.3s;
+}
+.right form .btn button:hover{
+  background: white;
+} */
+/* .bottom center{
+  padding: 5px;
+  font-size: 0.9375rem;
+  background: black;
+}
+.bottom center span{
+  color: white;
+}
+.bottom center a{
+  color: #43b7ff;
+  text-decoration: none;
+}
+.bottom center a:hover{
+  text-decoration: underline;
+} */  
